@@ -2,21 +2,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSessionCookie } from "better-auth/cookies";
 
 export async function middleware(request: NextRequest) {
-  const authURLs = [
-    "/sign-in",
-    "/sign-up",
-    "/forgot-password",
-    "/reset-password",
-    "/2fa",
-    "/recovery",
-  ];
+  const authURLs = ["/sign-in"];
   const isAuthURL = authURLs.includes(request.nextUrl.pathname);
 
   const publicURLs: string[] = ["/terms", "/privacy"];
   const isPublicURL = publicURLs.includes(request.nextUrl.pathname);
 
   const sessionCookie = getSessionCookie(request, {
-    cookiePrefix: "stories",
+    cookiePrefix: "espoltify",
   });
 
   if (isPublicURL) return NextResponse.next();
@@ -44,3 +37,4 @@ export const config = {
     "/((?!api|_next/static|_next/image|favicon.ico|sitemap.xml|robots.txt).*)",
   ],
 };
+

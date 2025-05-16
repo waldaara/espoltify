@@ -10,7 +10,7 @@ export const useSignInSocialMutation = () => {
   const router = useRouter();
 
   return useMutation({
-    mutationFn: async ({ provider }: { provider: "google" | "github" }) => {
+    mutationFn: async ({ provider }: { provider: "google" }) => {
       const { data, error } = await authClient.signIn.social({
         provider,
         callbackURL: "/home",
@@ -30,3 +30,4 @@ export const useSignInSocialMutation = () => {
     },
   });
 };
+

@@ -5,8 +5,8 @@ import { GalleryVerticalEnd } from "lucide-react";
 import { SignInForm } from "@/features/auth/components/sign-in-form";
 
 export const metadata: Metadata = {
-  title: "Stories | Sign In",
-  description: "Sign in to Stories",
+  title: "Espolify | Sign In",
+  description: "Sign in to Espolify",
 };
 
 export default function SignInPage() {
@@ -19,9 +19,11 @@ export default function SignInPage() {
         <div className="bg-primary text-primary-foreground flex size-6 items-center justify-center rounded-md">
           <GalleryVerticalEnd className="size-4" />
         </div>
-        Stories
+        Espolify
       </Link>
+
       <SignInForm />
     </div>
   );
 }
+

@@ -1,14 +1,5 @@
 import { useMemo } from "react";
-import {
-  HomeIcon,
-  UserRoundCheckIcon,
-  VenetianMaskIcon,
-  SearchIcon,
-  BellIcon,
-  MessageCircleIcon,
-  UserRoundIcon,
-  SettingsIcon,
-} from "lucide-react";
+import { HomeIcon, SettingsIcon } from "lucide-react";
 
 import { useSession } from "@/shared/hooks/use-session";
 
@@ -26,38 +17,12 @@ export const useAppSidebar = () => {
     () => [
       { href: "/home", label: "Home", icon: <HomeIcon /> },
       {
-        href: "/close-friends",
-        label: "Close Friends",
-        icon: <UserRoundCheckIcon />,
-      },
-      {
-        href: "/ghosts",
-        label: "Ghosts",
-        icon: <VenetianMaskIcon />,
-      },
-      {
-        href: "/explore",
-        label: "Explore",
-        icon: <SearchIcon />,
-      },
-      {
-        href: "/notifications",
-        label: "Notifications",
-        icon: <BellIcon />,
-      },
-      { href: "/chat", label: "Chat", icon: <MessageCircleIcon /> },
-      {
-        href: `/${session?.user.username}`,
-        label: "Profile",
-        icon: <UserRoundIcon />,
-      },
-      {
         href: "/settings",
         label: "Settings",
         icon: <SettingsIcon />,
       },
     ],
-    [session?.user.username]
+    []
   );
 
   return {
@@ -70,3 +35,4 @@ export const useAppSidebar = () => {
     isSessionRefetching,
   };
 };
+

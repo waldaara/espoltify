@@ -7,7 +7,7 @@ import { db } from "@/shared/lib/drizzle/server";
 import { redis } from "@/shared/lib/upstash/redis";
 
 export const auth = betterAuth({
-  appName: "Stories",
+  appName: "Espolify",
   baseURL: BASE_URL,
   //TODO
   trustedOrigins: ["http://192.168.0.113:3000"],
@@ -34,7 +34,6 @@ export const auth = betterAuth({
     cookiePrefix: "espoltify",
   },
   plugins: [nextCookies()],
-  user: {
   socialProviders: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID as string,
