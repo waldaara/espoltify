@@ -8,8 +8,8 @@ import {
 } from "@/shared/components/ui/typography";
 
 export const metadata: Metadata = {
-  title: "Stories | Privacy Policy",
-  description: "Stories Privacy Policy",
+  title: "Espolify | Privacy Policy",
+  description: "Espolify Privacy Policy",
 };
 
 export default function Privacy() {
@@ -20,7 +20,7 @@ export default function Privacy() {
       <TypographyMuted>Effective Date: March 21, 2025</TypographyMuted>
 
       <TypographyP className="mb-6">
-        At Stories, we value your privacy and are committed to protecting your
+        At Espoltify, we value your privacy and are committed to protecting your
         personal information. This Privacy Policy outlines how we collect, use,
         and safeguard your data when you use our social media application.
       </TypographyP>
@@ -28,7 +28,8 @@ export default function Privacy() {
       <TypographyH2>1. Information We Collect</TypographyH2>
 
       <TypographyP className="mb-6">
-        When you use Stories, we may collect the following types of information:
+        When you use Espoltify, we may collect the following types of
+        information:
       </TypographyP>
 
       <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
@@ -44,7 +45,7 @@ export default function Privacy() {
 
         <li>
           <b>Device Information:</b> Data about the device you use to access
-          Stories, such as IP address, browser type, and operating system.
+          Espoltify, such as IP address, browser type, and operating system.
         </li>
       </ul>
 
@@ -56,8 +57,8 @@ export default function Privacy() {
 
       <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
         <li>
-          Service Provision: To operate and maintain the Stories app, including
-          displaying posts and facilitating interactions.
+          Service Provision: To operate and maintain the Espoltify app,
+          including displaying posts and facilitating interactions.
         </li>
 
         <li>
@@ -110,10 +111,10 @@ export default function Privacy() {
       <TypographyH2>7. Third-Party Links</TypographyH2>
 
       <TypographyP className="mb-6">
-        Stories may contain links to external websites or services not operated
-        by us. We are not responsible for the privacy practices of these third
-        parties. We encourage you to review the privacy policies of any external
-        sites you visit.
+        Espoltify may contain links to external websites or services not
+        operated by us. We are not responsible for the privacy practices of
+        these third parties. We encourage you to review the privacy policies of
+        any external sites you visit.
       </TypographyP>
 
       <TypographyH2>8. Changes to This Privacy Policy</TypographyH2>
@@ -137,9 +138,10 @@ export default function Privacy() {
       </ul>
 
       <TypographyP className="mb-6">
-        Thank you for trusting Stories with your personal information. We are
+        Thank you for trusting Espoltify with your personal information. We are
         dedicated to providing a secure and enjoyable social media experience.
       </TypographyP>
     </main>
   );
 }
+

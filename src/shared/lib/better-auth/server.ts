@@ -9,8 +9,6 @@ import { redis } from "@/shared/lib/upstash/redis";
 export const auth = betterAuth({
   appName: "Espolify",
   baseURL: BASE_URL,
-  //TODO
-  trustedOrigins: ["http://192.168.0.113:3000"],
   database: drizzleAdapter(db, {
     provider: "pg",
   }),
@@ -36,6 +34,7 @@ export const auth = betterAuth({
   plugins: [nextCookies()],
   socialProviders: {
     google: {
+      scope: ["https://www.googleapis.com/auth/calendar"],
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
       mapProfileToUser: (profile) => {

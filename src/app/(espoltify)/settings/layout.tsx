@@ -11,7 +11,7 @@ import { PageWrapper } from "@/features/settings/components/page-wrapper";
 import { MobileWrapper } from "@/features/settings/components/mobile-wrapper";
 
 export const metadata: Metadata = {
-  title: "Stories | Settings",
+  title: "Espolify | Settings",
 };
 
 export default function SettingsLayout({
@@ -43,3 +43,4 @@ export default function SettingsLayout({
     </div>
   );
 }
+

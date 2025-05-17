@@ -9,7 +9,7 @@ import { AppSidebar } from "@/shared/components/app-sidebar";
 import { auth } from "@/shared/lib/better-auth/server";
 import { SESSION_QUERY_KEY } from "@/shared/lib/react-query/query-key-factory";
 
-export default async function StoriesLayout({
+export default async function EspolifyLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -37,3 +37,4 @@ export default async function StoriesLayout({
     </HydrationBoundary>
   );
 }
+
